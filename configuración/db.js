@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const conectarDB = async () => {
     try{
         const connection = await mongoose.connect(
-            "mongodb+srv://jhonny:Sergio2022*@cluster0.sbvhstb.mongodb.net/GraphQL",{
-                useNewUrlParser: true,
+    "         mongodb+srv://<username>:<password>@cluster0.advmndd.mongodb.net/?retryWrites=true&w=majority",{
+            useNewUrlParser: true,
                 useUnifiedTopology: true,
             });
             const url = `${connection.connection.host}:${connection.connection.port}`;
